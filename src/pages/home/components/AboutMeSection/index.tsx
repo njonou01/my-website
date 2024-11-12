@@ -8,7 +8,7 @@ const AboutMe: React.FC = () => {
     "personal"
   );
   return (
-    <Section regularTitle="À propos" gradientTitle="de Moi">
+    <Section regularTitle="de Moi" gradientTitle="À propos">
       <div className="flex justify-center mt-8">
         <div className="inline-flex bg-white dark:bg-gray-800 rounded-xl p-1.5 shadow-lg">
           {tabs.map((tab) => (

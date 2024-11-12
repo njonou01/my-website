@@ -131,6 +131,7 @@ export type CategoryButton = {
   icon: string;
 };
 
+export type ProjectCategory = "all" | "ML" | "Data" | "Web";
 // Pour la section Hero
 
 export type Announce = {

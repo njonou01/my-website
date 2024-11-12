@@ -7,6 +7,7 @@ import desktopProfilImage from "../../assets/desktop.profile.png";
 import { SkillsSection } from "./components/SkillSection";
 import ProjectSection from "./components/ProjectSection";
 import EducationSection from "./components/Education";
+import ContactSection from "./components/ContactSection";
 
 const Home: React.FC = () => {
   const roles = ["#Développeur Full Stack", "#Lead Developer"];
@@ -23,6 +24,7 @@ const Home: React.FC = () => {
       <SkillsSection />
       <ProjectSection />
       <EducationSection />
+      <ContactSection />
     </Layout>
   );
 };

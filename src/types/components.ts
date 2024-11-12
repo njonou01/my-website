@@ -132,11 +132,6 @@ export type CategoryButton = {
 };
 
 // Pour la section Hero
-export type Introduction = {
-  greeting: string;
-  name: string;
-  description: string;
-};
 
 export type Announce = {
   title: string;
@@ -151,4 +146,18 @@ export type Badge = {
   subtitle: string;
   gradient: string;
   position: string;
+};
+
+export type Status = {
+  emoji: string;
+  title: string;
+  details: string;
+  gradient: string;
+};
+
+export type Social = {
+  icon: string;
+  url: string;
+  label: string;
+  color: string;
 };

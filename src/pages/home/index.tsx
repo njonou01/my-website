@@ -1,10 +1,26 @@
 import Layout from "../../layout/index";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import HeroSection from "./components/HeroSection";
+import AboutMe from "./components/AboutMeSection";
+import mobileProfilImage from "../../assets/mobile.profile.png";
+import desktopProfilImage from "../../assets/desktop.profile.png";
+import { SkillsSection } from "./components/SkillSection";
+import ProjectSection from "./components/ProjectSection";
 
 const Home: React.FC = () => {
+  const roles = ["#Développeur Full Stack", "#Lead Developer"];
+  const [profilImage, setprofilImage] = useState(desktopProfilImage);
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768;
+    setprofilImage(isMobile ? mobileProfilImage : desktopProfilImage);
+  }, []);
+
   return (
     <Layout>
-      <div></div>
+      <HeroSection roles={roles} profilePath={profilImage} />
+      <AboutMe />
+      <SkillsSection />
+      <ProjectSection />
     </Layout>
   );
 };

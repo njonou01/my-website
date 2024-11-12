@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
                 {sections.map((item, i) => (
                   <li key={i}>
                     <a
-                      href={`#${item.label.toLowerCase()}`}
+                      href={item.href}
                       className="text-gray-400 hover:text-primary-400 transition-colors"
                     >
                       {item.label}

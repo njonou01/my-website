@@ -14,6 +14,18 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [currentLang, setCurrentLang] = useState(languages[0]);
   const [isDark, setIsDark] = useState(false);
+  const [, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsVisible(scrollTop > 300);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const toggleTheme = () => {
     setIsDark(isDark);
     document.documentElement.classList.toggle("dark", isDark);

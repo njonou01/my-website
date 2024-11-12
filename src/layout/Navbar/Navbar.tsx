@@ -49,7 +49,7 @@ const Navbar: React.FC<NavbarProps> = ({
             {sections.map((item) => (
               <a
                 key={item.label}
-                href={`#${item.label.toLowerCase().replace(" ", "-")}`}
+                href={item.href}
                 className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
               >
                 {item.label}

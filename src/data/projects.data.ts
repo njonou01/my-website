@@ -1,4 +1,4 @@
-import { CategoryButton, Project } from "@/types/props.type";
+import { CategoryButton, Project } from "@/types/components";
 
 export const projects: Project[] = [
   {

@@ -1,4 +1,4 @@
-import { SkillCategory } from "@/types/props.type";
+import { SkillCategory } from "@/types/components";
 
 export const skillCategories: SkillCategory[] = [
   {

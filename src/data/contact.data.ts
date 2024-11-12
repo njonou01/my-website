@@ -1,4 +1,4 @@
-import { ContactInfo, SocialLink } from "@/types/props.type";
+import { ContactInfo, SocialLink } from "@/types/components";
 
 export const socialLinks: SocialLink[] = [
   {

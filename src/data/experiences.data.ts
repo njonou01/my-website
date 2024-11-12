@@ -1,4 +1,12 @@
-import { Experience } from "@/types/props.type";
+export type Experience = {
+  title: string;
+  company: string;
+  period: string;
+  location: string;
+  description: string;
+  achievements: string[];
+  tech: string[];
+};
 
 export const experiences: Experience[] = [
   {

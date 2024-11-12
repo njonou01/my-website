@@ -1,4 +1,15 @@
-import { Education } from "@/types/props.type";
+type Education = {
+  id: number;
+  title: string;
+  school: string;
+  period: string;
+  location: string;
+  description: string;
+  specializations: string[];
+  skills: string[];
+  status: "En cours" | "Diplômé";
+  syllabusUrl: string;
+};
 
 export const education: Education[] = [
   {

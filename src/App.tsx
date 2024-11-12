@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Home from "@/pages/home";
+import LoadingScreen from "@/pages/loading";
 
 const App: React.FC = () => {
-  return <div className="bg-green-100">App</div>;
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    const loadApp = async () => {
+      try {
+        await new Promise((resolve) => setTimeout(resolve, 2000));
+
+        setIsLoading(false);
+      } catch (error) {
+        console.error("Erreur de chargement:", error);
+        setIsLoading(false);
+      }
+    };
+
+    loadApp();
+  }, []);
+
+  if (isLoading) {
+    return <LoadingScreen />;
+  }
+  return <Home />;
 };
 
 export default App;

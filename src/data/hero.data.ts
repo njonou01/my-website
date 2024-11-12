@@ -1,4 +1,13 @@
-const heroData = {
+import { Announce, Badge, Introduction, SocialLink } from "@/types/components";
+
+type HeroData = {
+  introduction: Introduction;
+  annunces: Announce[];
+  socialLinks: SocialLink[];
+  badges: Badge[];
+};
+
+const heroData: HeroData = {
   introduction: {
     greeting: "👋 Bonjour, je suis",
     name: "Gaby NJONOU ",
@@ -79,4 +88,5 @@ const heroData = {
     },
   ],
 };
+
 export default heroData;

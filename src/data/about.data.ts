@@ -1,4 +1,4 @@
-import { PersonalTrait, TabContent } from "@/types/props.type";
+import { PersonalTrait, Tab, TabContent } from "@/types/components";
 
 export const personalTraits: PersonalTrait[] = [
   {
@@ -120,11 +120,7 @@ export const tabContent: TabContent = {
   },
 };
 
-export const tabs: Array<{
-  id: "personal" | "profile" | "goals";
-  label: string;
-  icon: string;
-}> = [
+export const tabs: Tab[] = [
   { id: "personal", label: "Personnel", icon: "👤" },
   { id: "profile", label: "Profil", icon: "🎯" },
   { id: "goals", label: "Objectifs", icon: "✨" },

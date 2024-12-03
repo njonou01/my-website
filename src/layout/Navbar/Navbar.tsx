@@ -8,24 +8,14 @@ interface NavbarProps {
   openMobileNav: () => void;
   isDark: boolean;
   toggleTheme: () => void;
-  // languages: Language[];
 }
-
-// interface Language {
-//   code: "fr" | "en";
-//   label: string;
-//   flag: string;
-// }
 
 const Navbar: React.FC<NavbarProps> = ({
   isScrolled,
   openMobileNav,
   isDark,
   toggleTheme,
-  // languages,
 }) => {
-  // const [isLangOpen, setIsLangOpen] = useState<boolean>(false);
-  // const [currentLang, setCurrentLang] = useState<Language>(languages[0]);
   const sections = navItems as unknown as NavItem[];
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -62,51 +52,6 @@ const Navbar: React.FC<NavbarProps> = ({
                 {item.label}
               </a>
             ))}
-            {/* 
-            <div className="relative">
-              <button
-                onClick={() => setIsLangOpen(!isLangOpen)}
-                className="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-              >
-                <div className="w-6 h-6 rounded-full overflow-hidden bg-gray-100 dark:bg-gray-800">
-                  <img
-                    src={currentLang.flag}
-                    alt={currentLang.label}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <span className="text-gray-700 dark:text-gray-300">
-                  {currentLang.code.toUpperCase()}
-                </span>
-              </button>
-
-              {isLangOpen && (
-                <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-xl py-2 z-50 border border-gray-100 dark:border-gray-700">
-                  {languages.map((lang) => (
-                    <button
-                      key={lang.code}
-                      onClick={() => {
-                        setCurrentLang(lang);
-                        setIsLangOpen(false);
-                      }}
-                      className="flex items-center space-x-3 w-full px-4 py-2 text-left hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors"
-                    >
-                      <div className="w-6 h-6 rounded-full overflow-hidden bg-gray-100 dark:bg-gray-800">
-                        <img
-                          src={lang.flag}
-                          alt={lang.label}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                      <span className="text-gray-700 dark:text-gray-300">
-                        {lang.label}
-                      </span>
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div> */}
-
             <button
               onClick={toggleTheme}
               className="rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
@@ -151,13 +96,6 @@ const Navbar: React.FC<NavbarProps> = ({
           </button>
         </div>
       </div>
-
-      {/* {isLangOpen && (
-        <div
-          className="fixed inset-0 z-40"
-          onClick={() => setIsLangOpen(false)}
-        />
-      )} */}
     </nav>
   );
 };

@@ -68,7 +68,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <ScrollProgress />
       <ScrollTopButton />
       <Navbar
-        languages={languages}
         isScrolled={isScrolled}
         openMobileNav={() => setIsMobileNavOpen(true)}
         isDark={isDark}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import navItems from "@/data/navLinks.json";
 import { NavItem } from "../types/layout.type";
 import { INITIALS } from "@/constants/branding";
@@ -8,25 +8,31 @@ interface NavbarProps {
   openMobileNav: () => void;
   isDark: boolean;
   toggleTheme: () => void;
-  languages: Language[];
+  // languages: Language[];
 }
 
-interface Language {
-  code: "fr" | "en";
-  label: string;
-  flag: string;
-}
+// interface Language {
+//   code: "fr" | "en";
+//   label: string;
+//   flag: string;
+// }
 
 const Navbar: React.FC<NavbarProps> = ({
   isScrolled,
   openMobileNav,
   isDark,
   toggleTheme,
-  languages,
+  // languages,
 }) => {
-  const [isLangOpen, setIsLangOpen] = useState<boolean>(false);
-  const [currentLang, setCurrentLang] = useState<Language>(languages[0]);
+  // const [isLangOpen, setIsLangOpen] = useState<boolean>(false);
+  // const [currentLang, setCurrentLang] = useState<Language>(languages[0]);
   const sections = navItems as unknown as NavItem[];
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView();
+    }
+  };
 
   return (
     <nav
@@ -39,7 +45,7 @@ const Navbar: React.FC<NavbarProps> = ({
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <a
-            href="#"
+            href="/"
             className="text-2xl font-bold bg-gradient-to-r from-primary-600 to-primary-500 text-transparent bg-clip-text"
           >
             {INITIALS}.
@@ -50,12 +56,13 @@ const Navbar: React.FC<NavbarProps> = ({
               <a
                 key={item.label}
                 href={item.href}
+                onClick={() => scrollToSection(item.href.split("#")[1])}
                 className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
               >
                 {item.label}
               </a>
             ))}
-
+            {/* 
             <div className="relative">
               <button
                 onClick={() => setIsLangOpen(!isLangOpen)}
@@ -98,7 +105,7 @@ const Navbar: React.FC<NavbarProps> = ({
                   ))}
                 </div>
               )}
-            </div>
+            </div> */}
 
             <button
               onClick={toggleTheme}
@@ -145,12 +152,12 @@ const Navbar: React.FC<NavbarProps> = ({
         </div>
       </div>
 
-      {isLangOpen && (
+      {/* {isLangOpen && (
         <div
           className="fixed inset-0 z-40"
           onClick={() => setIsLangOpen(false)}
         />
-      )}
+      )} */}
     </nav>
   );
 };

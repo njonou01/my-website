@@ -27,6 +27,7 @@ const EducationSection: React.FC<EducationSectionProps> = ({ className }) => {
 
   return (
     <section
+      id="education"
       className={`py-20 bg-gray-50 dark:bg-gray-900 ${className}`}
       ref={sectionRef}
     >
@@ -43,15 +44,7 @@ const EducationSection: React.FC<EducationSectionProps> = ({ className }) => {
 
         <div className="max-w-5xl mx-auto space-y-6">
           {education.map((edu) => (
-            <div
-              key={edu.id}
-              className="relative bg-white dark:bg-gray-800 rounded-2xl 
-                       border border-gray-100 dark:border-gray-700
-                       shadow-lg dark:shadow-gray-900/10
-                       hover:shadow-xl dark:hover:shadow-gray-900/20 
-                       hover:border-gray-200 dark:hover:border-gray-600
-                       transition-all duration-300"
-            >
+            <div key={edu.id} className="card">
               <div
                 onClick={() =>
                   setSelectedId(selectedId === edu.id ? null : edu.id)
@@ -108,15 +101,7 @@ const EducationSection: React.FC<EducationSectionProps> = ({ className }) => {
 
                 <div className="flex flex-wrap gap-2 mt-4">
                   {edu.specializations.map((spec, idx) => (
-                    <span
-                      key={idx}
-                      className="px-3 py-1.5 text-sm font-medium
-                               text-gray-700 dark:text-gray-300
-                               bg-gray-100 dark:bg-gray-700/50
-                               border border-gray-200 dark:border-gray-600
-                               hover:border-indigo-300 dark:hover:border-indigo-700
-                               rounded-lg transition-colors duration-200"
-                    >
+                    <span key={idx} className="tech-badge">
                       {spec}
                     </span>
                   ))}

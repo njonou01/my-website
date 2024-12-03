@@ -30,7 +30,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
 const HeroActions: React.FC = () => {
   return (
     <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-      <ActionButton href="#projets" variant="primary">
+      <ActionButton href="#about" variant="primary">
         Découvrir mon profil
       </ActionButton>
       <ActionButton href="#contact" variant="secondary">

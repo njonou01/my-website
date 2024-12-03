@@ -1,8 +1,6 @@
 import { Project } from "@/types/components";
 import { ProjectStatus } from "./ProjectStatus";
-import { TechnologyTag } from "./TechnologyTag";
 import { ProjectLinks } from "./ProjectLinks";
-import { ProjectDetails } from "./ProjectDetails";
 
 interface ProjectCardProps {
   project: Project;
@@ -15,14 +13,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   isActive,
   onToggleDetails,
 }) => (
-  <div
-    className="group bg-white dark:bg-gray-800 rounded-2xl 
-      shadow-lg dark:shadow-gray-900/10
-      border border-gray-100 dark:border-gray-700
-      overflow-hidden transition-all duration-300 
-      hover:shadow-xl dark:hover:shadow-gray-900/20
-      hover:-translate-y-1"
-  >
+  <div className="card">
     <div className="relative overflow-hidden">
       <div className="aspect-video bg-gray-100 dark:bg-gray-700">
         <img
@@ -61,7 +52,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 
       <div className="flex flex-wrap gap-2 mb-4">
         {project.technologies.map((tech, idx) => (
-          <TechnologyTag key={idx} name={tech} />
+          <span className="tech-badge" key={idx}>
+            {tech}
+          </span>
         ))}
       </div>
 
@@ -85,12 +78,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             demoLink={project.demoLink}
           />
         </div>
-
-        <ProjectDetails
-          isActive={isActive}
-          description={project.fullDescription}
-          highlights={project.highlights}
-        />
       </div>
     </div>
   </div>

@@ -1,3 +1,9 @@
+export type Introduction = {
+  greeting: string;
+  name: string;
+  description: string;
+};
+
 // Pour la section Compétences
 export type Tool = {
   name: string;

@@ -21,3 +21,22 @@
     background-position: 20px 20px;
   }
 }
+@layer components {
+  .card {
+    @apply relative bg-white dark:bg-gray-800 rounded-xl 
+    border border-gray-100 dark:border-gray-700
+    shadow-md dark:shadow-gray-900/10 p-6
+    transition-all duration-300 
+    hover:shadow-xl dark:hover:shadow-gray-900/20
+    hover:border-gray-200 dark:hover:border-gray-600;
+  }
+  .tech-badge {
+    @apply px-3 py-1.5 text-sm font-medium
+    text-gray-600 dark:text-gray-300
+    bg-gray-100 dark:bg-gray-700
+    rounded-full border border-gray-200 dark:border-gray-600
+    hover:bg-gray-200 dark:hover:bg-gray-600
+    hover:border-primary-300 dark:hover:border-primary-600
+    transition-colors duration-200;
+  }
+}

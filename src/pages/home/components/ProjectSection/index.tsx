@@ -17,6 +17,7 @@ const ProjectSection: React.FC = () => {
       regularTitle="Projets"
       gradientTitle="Remarquables"
       description="Un aperçu de mes réalisations en machine learning, data engineering et développement web"
+      id="projects"
     >
       <div className="flex justify-center mb-12">
         <div

@@ -20,12 +20,7 @@ export const SkillCard: React.FC<SkillCardProps> = ({
   <div
     onMouseEnter={() => onHover(skill.name)}
     onMouseLeave={() => onHover(null)}
-    className={`relative bg-white dark:bg-gray-800 rounded-xl 
-      border border-gray-100 dark:border-gray-700
-      shadow-md dark:shadow-gray-900/10 p-6
-      transition-all duration-300 
-      hover:shadow-xl dark:hover:shadow-gray-900/20
-      hover:border-gray-200 dark:hover:border-gray-600
+    className={`card
       ${isHovered ? "scale-[1.02]" : ""}`}
   >
     <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-3">

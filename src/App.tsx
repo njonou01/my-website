@@ -7,7 +7,7 @@ const App: React.FC = () => {
   useEffect(() => {
     const loadApp = async () => {
       try {
-        await new Promise((resolve) => setTimeout(resolve, 2000));
+        await new Promise((resolve) => setTimeout(resolve, 200));
 
         setIsLoading(false);
       } catch (error) {

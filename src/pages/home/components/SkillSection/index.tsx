@@ -13,6 +13,7 @@ export const SkillsSection: React.FC = () => {
       regularTitle="Compétences"
       gradientTitle="Techniques"
       description="Technologies et outils maîtrisés à travers mes projets et ma formation"
+      id="skills"
     >
       <div className="flex flex-col lg:flex-row gap-8">
         <div className="lg:w-1/3">

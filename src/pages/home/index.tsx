@@ -8,9 +8,10 @@ import { SkillsSection } from "./components/SkillSection";
 import ProjectSection from "./components/ProjectSection";
 import EducationSection from "./components/Education";
 import ContactSection from "./components/ContactSection";
+import ExperienceSection from "./components/ExperienceSection";
 
 const Home: React.FC = () => {
-  const roles = ["#Développeur Full Stack", "#Lead Developer"];
+  const roles = ["#Éleve Ingénieur", "#Développeur Full Stack"];
   const [profilImage, setprofilImage] = useState(desktopProfilImage);
   useEffect(() => {
     const isMobile = window.innerWidth < 768;
@@ -21,6 +22,7 @@ const Home: React.FC = () => {
     <Layout>
       <HeroSection roles={roles} profilePath={profilImage} />
       <AboutMe />
+      <ExperienceSection />
       <SkillsSection />
       <ProjectSection />
       <EducationSection />

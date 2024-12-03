@@ -10,9 +10,9 @@ type HeroData = {
 const heroData: HeroData = {
   introduction: {
     greeting: "👋 Bonjour, je suis",
-    name: "Gaby NJONOU ",
+    name: "Gaby NJONOU",
     description:
-      "Passionné par #l'IA et la #DataScience, je transforme les #données en solutions #innovantes.",
+      "Passionné par l'univers de la tech, je me plonge chaque jour dans les domaines du #code, de la #data, du #cloud et du #DevOps, en apprenant et explorant sans cesse 🚀.",
   },
 
   annunces: [

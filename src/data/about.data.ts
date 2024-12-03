@@ -2,19 +2,19 @@ import { PersonalTrait, Tab, TabContent } from "@/types/components";
 
 export const personalTraits: PersonalTrait[] = [
   {
-    label: "Approche",
-    text: "Créatif & Innovant",
-    icon: "💡",
+    label: "Mindset",
+    text: "Problem Solver",
+    icon: "🧠",
     position: {
-      top: "5%",
+      top: "15%",
       right: "5%",
       rotate: "15deg",
     },
   },
   {
-    label: "Mindset",
-    text: "Toujours apprendre",
-    icon: "🎯",
+    label: "Excellence",
+    text: "Rigoureux & Organisé",
+    icon: "⚡",
     position: {
       top: "45%",
       left: "1rem",
@@ -23,8 +23,8 @@ export const personalTraits: PersonalTrait[] = [
   },
   {
     label: "Valeurs",
-    text: "Détermination",
-    icon: "⭐",
+    text: "Esprit d'équipe",
+    icon: "🤝",
     position: {
       top: "75%",
       right: "1rem",
@@ -37,84 +37,76 @@ export const tabContent: TabContent = {
   personal: {
     title: "Personnel",
     subtitle: "Mon Histoire",
-    description: `Passionné par les mathématiques et la technologie depuis mon plus jeune âge,
-                 j'ai toujours été fasciné par la façon dont nous pouvons utiliser ces outils
-                 pour créer un impact positif. Mon parcours m'a permis de développer une
-                 approche unique, combinant créativité et rigueur analytique.`,
+    description: `Du Cameroun à la France, mon parcours m'a forgé une vision unique 
+    de la technologie. Chaque défi rencontré a renforcé ma passion pour 
+    l'innovation et ma soif d'apprentissage.`,
     highlights: [
       {
-        title: "Début de l'aventure",
-        text: "Découverte de la programmation static ",
+        title: "Racines",
+        text: "De la passion à l'expertise",
+        icon: "🌱",
+      },
+      {
+        title: "Évolution",
+        text: "La tech comme second langage",
         icon: "🚀",
       },
       {
-        title: "Formation",
-        text: "Développement de compétences techniques",
-        icon: "📚",
-      },
-      {
-        title: "Vision",
-        text: "Création de solutions innovantes",
-        icon: "🔮",
+        title: "Ambition",
+        text: "Repousser les frontières du possible",
+        icon: "✨",
       },
     ],
   },
   profile: {
     title: "Profil",
-    subtitle: "Ce qui me définit",
+    subtitle: "Mon ADN",
     hobbies: [
       {
-        name: "Lecture",
-        description:
-          "Passionné par les livres de développement personnel et d'innovation",
-        icon: "📚",
+        name: "Tech",
+        description: "L'innovation comme mode de vie",
+        icon: "💻",
       },
       {
-        name: "Sport",
-        description: "Le sport comme source d'énergie et de discipline",
-        icon: "⚡",
+        name: "Science",
+        description: "La curiosité comme moteur",
+        icon: "🔬",
       },
       {
-        name: "Musique",
-        description: "Source d'inspiration et de créativité",
-        icon: "🎵",
-      },
-      {
-        name: "Voyage",
-        description: "Découvrir de nouvelles perspectives",
-        icon: "✈️",
+        name: "Football",
+        description: "L'esprit d'équipe en action",
+        icon: "⚽",
       },
     ],
     personality: [
-      "Créatif et innovant dans l'approche des défis",
-      "Passionné par l'apprentissage continu",
-      "Orienté solutions et résultats",
-      "Esprit d'équipe et collaboration",
+      "Curieux par nature",
+      "Déterminé face aux défis",
+      "Passionné de tech",
+      "Apprentissage constant",
     ],
   },
   goals: {
     title: "Objectifs",
-    subtitle: "Mes Ambitions",
-    vision: `Créer un impact significatif à travers l'innovation technologique,
-            tout en continuant à grandir personnellement et professionnellement.`,
+    subtitle: "Ma Vision",
+    vision: `Construire le futur avec la tech comme langage universel`,
     shortTerm: [
       {
-        goal: "Excellence Technique",
-        description: "Maîtriser les dernières innovations",
+        goal: "Excellence",
+        description: "Maîtriser l'art du code et de la data",
       },
       {
-        goal: "Leadership",
-        description: "Développer mes compétences en gestion d'équipe",
+        goal: "Impact",
+        description: "Transformer les idées en réalités",
       },
     ],
     longTerm: [
       {
-        goal: "Innovation",
-        description: "Créer des solutions qui font la différence",
+        goal: "Pioneer",
+        description: "Explorer les frontières de la tech",
       },
       {
-        goal: "Impact",
-        description: "Contribuer positivement à la société",
+        goal: "Legacy",
+        description: "Inspirer la prochaine génération",
       },
     ],
   },

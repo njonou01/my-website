@@ -10,7 +10,7 @@ import { ProgressBar } from "./components/ProgressBar";
 import { TechnologyStack } from "./components/TechnologyStack";
 
 const LoadingScreen: React.FC<LoadingPageProps> = ({
-  minLoadingTime = 2000,
+  minLoadingTime = 200,
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const floatingIcons = useFloatingIcons();

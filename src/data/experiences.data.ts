@@ -10,43 +10,70 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
-    title: "Stagiaire Machine Learning",
+    title: "Professeur particulier de mathématiques",
+    company: "Acadomia",
+    period: "Fev. 2024 - Présent",
+    location: "Île de France",
+    description:
+      "Enseignement personnalisé des mathématiques du CE1 à la Terminale",
+    achievements: [
+      "Adaptation des méthodes pédagogiques selon le niveau",
+      "Suivi personnalisé des progrès des élèves",
+      "Préparation aux examens et contrôles",
+      "Développement de supports pédagogiques",
+    ],
+    tech: ["Mathématiques", "Pédagogie", "Méthodologie"],
+  },
+  {
+    title: "Développeur Full Stack",
+    company: "StudentBank",
+    period: "Juin 2024 - Août 2024",
+    location: "Meaux, France",
+    description:
+      "Développement d'une plateforme complète d'accompagnement étudiant : recherche de logement, gestion bancaire, et services d'aide à la vie étudiante",
+    achievements: [
+      "Développement de fonctionnalités de recherche avancée pour le logement",
+      "Implémentation du système de gestion de compte utilisateur",
+      "Mise en place de l'internationalisation (i18n) pour une portée internationale",
+      "Optimisation des performances et de l'expérience utilisateur",
+    ],
+    tech: ["Spring Boot", "Angular", "RxJs", "Java", "Jenkins", "i18n"],
+  },
+  {
+    title: "ML Engineer & Data Scientist",
     company: "TOGETTECH",
     period: "Juil. 2022 - Sept. 2022",
     location: "Yaoundé, Cameroun",
     description:
-      "Développement d'un algorithme de recommandation de jobs et formations",
+      "Conception et développement d'un système de recommandation intelligent",
     achievements: [
+      "Développement d'algorithmes de recommandation personnalisés",
       "Mise en place de pipelines d'extraction de données automatisés",
-      "Déploiement d'un script d'extraction via AWS",
-      "Utilisation de Firebase, Flask, Selenium, MongoDB",
+      "Optimisation des performances du système de scraping",
+      "Intégration avec Firebase et construction d'API REST",
     ],
-    tech: ["Python", "AWS", "MongoDB", "Selenium", "Flask"],
-  },
-  {
-    title: "Data Scientist/ML",
-    company: "Spacekola",
-    period: "Juil. 2021 - Sept. 2021",
-    location: "Yaoundé, Cameroun",
-    description: "Analyse de données et visualisation pour aide à la décision",
-    achievements: [
-      "Analyse approfondie des données",
-      "Création de visualisations pertinentes",
-      "Rédaction de rapports techniques",
+    tech: [
+      "Python",
+      "Flask",
+      "MongoDB",
+      "Selenium",
+      "Beautiful Soup",
+      "Scrapy",
+      "Firebase",
     ],
-    tech: ["Python", "Matplotlib", "Seaborn", "Pandas"],
   },
   {
     title: "Développeur Full Stack",
-    company: "Dept Informatique UY1",
+    company: "TE-SEA",
     period: "Juil. 2021 - Oct. 2021",
     location: "Yaoundé, Cameroun",
-    description: "Développement full stack d'une plateforme web",
+    description: "Développement d'une plateforme éducative complète",
     achievements: [
-      "Création de templates frontend",
-      "Développement d'API backend",
-      "Collaboration en équipe",
+      "Création d'interfaces utilisateur réactives avec ReactJS",
+      "Développement d'API RESTful avec Laravel",
+      "Optimisation des performances de la base de données",
+      "Implémentation de fonctionnalités de recherche avancée",
     ],
-    tech: ["Laravel", "MySQL", "JavaScript", "TailwindCSS"],
+    tech: ["Laravel", "MySQL", "ReactJS", "TailwindCSS", "Node.js", "Git"],
   },
 ];

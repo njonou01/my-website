@@ -1,4 +1,5 @@
-import { DisplayedTech } from "./loading.types";
+import { DisplayedTech } from "../types/loading.types";
+
 export interface Technology {
   name: string;
   logo: string;
